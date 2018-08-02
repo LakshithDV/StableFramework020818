@@ -1,0 +1,17 @@
+testcases/LoginTest.class
+pageobjects/Manager/DashboardPage.class
+pageobjects/Writer/DashboardPage.class
+pageobjects/FrontEnd/frontEnd.class
+pageobjects/Manager/SubmittedPage.class
+pageobjects/Manager/ProjectSummaryPage.class
+pageobjects/LargeBatchWriter/SubmitArticlesPageLb.class
+pageobjects/LargeBatchManager/TextmercatoProfilePageLb.class
+pageobjects/LargeBatchWriter/DashboardPageLb.class
+pageobjects/Manager/TextmercatoProfilePage.class
+pageobjects/LargeBatchManager/ProjectSummaryPageLb.class
+pageobjects/LargeBatchManager/DashboardPageLb.class
+testcases/TextmercatoEndEndFlow.class
+pageobjects/Manager/TextmercatoLogin.class
+pageobjects/Writer/SubmitArticlesPage.class
+pageobjects/Editor/ProjectsUnderReviewPage.class
+pageobjects/Editor/DashboardPage.class

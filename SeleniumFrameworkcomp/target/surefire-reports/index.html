@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-skipped">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods,  13 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="dashboardClientpage">dashboardClientpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="editor_ApproveAndRejectArticles">editor_ApproveAndRejectArticles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="frontEndTesting">frontEndTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="manager_ApproveReworkArticles">manager_ApproveReworkArticles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="manager_CreateProject">manager_CreateProject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="manager_Messages">manager_Messages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="manager_ReviewArticles">manager_ReviewArticles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="manager_Tickets">manager_Tickets</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="manager_profilepage">manager_profilepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="manager_reviewArticlesSubmittedByEditor">manager_reviewArticlesSubmittedByEditor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="writer_ReworkOnArticles">writer_ReworkOnArticles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="writer_SubmitArticles">writer_SubmitArticles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.TextmercatoEndEndFlow" hash-for-method="wrtiter_VerifyProjCompleted">wrtiter_VerifyProjCompleted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.TextmercatoEndEndFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dashboardClientpage">
+                  </a> <!-- dashboardClientpage -->
+                  <span class="method-name">dashboardClientpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editor_ApproveAndRejectArticles">
+                  </a> <!-- editor_ApproveAndRejectArticles -->
+                  <span class="method-name">editor_ApproveAndRejectArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="frontEndTesting">
+                  </a> <!-- frontEndTesting -->
+                  <span class="method-name">frontEndTesting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manager_ApproveReworkArticles">
+                  </a> <!-- manager_ApproveReworkArticles -->
+                  <span class="method-name">manager_ApproveReworkArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manager_CreateProject">
+                  </a> <!-- manager_CreateProject -->
+                  <span class="method-name">manager_CreateProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manager_Messages">
+                  </a> <!-- manager_Messages -->
+                  <span class="method-name">manager_Messages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manager_ReviewArticles">
+                  </a> <!-- manager_ReviewArticles -->
+                  <span class="method-name">manager_ReviewArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manager_Tickets">
+                  </a> <!-- manager_Tickets -->
+                  <span class="method-name">manager_Tickets</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manager_profilepage">
+                  </a> <!-- manager_profilepage -->
+                  <span class="method-name">manager_profilepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="manager_reviewArticlesSubmittedByEditor">
+                  </a> <!-- manager_reviewArticlesSubmittedByEditor -->
+                  <span class="method-name">manager_reviewArticlesSubmittedByEditor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="writer_ReworkOnArticles">
+                  </a> <!-- writer_ReworkOnArticles -->
+                  <span class="method-name">writer_ReworkOnArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="writer_SubmitArticles">
+                  </a> <!-- writer_SubmitArticles -->
+                  <span class="method-name">writer_SubmitArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrtiter_VerifyProjCompleted">
+                  </a> <!-- wrtiter_VerifyProjCompleted -->
+                  <span class="method-name">wrtiter_VerifyProjCompleted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/text/Documents/SeleniumFrameworkcomp/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;TestName&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TextmercatoEndEndFlow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestName --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestName (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'frontEndTesting')
+data.setCell(0, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'dashboardClientpage')
+data.setCell(1, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'wrtiter_VerifyProjCompleted')
+data.setCell(2, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'manager_Tickets')
+data.setCell(3, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'manager_profilepage')
+data.setCell(4, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'manager_Messages')
+data.setCell(5, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'manager_ReviewArticles')
+data.setCell(6, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'manager_CreateProject')
+data.setCell(7, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'writer_ReworkOnArticles')
+data.setCell(8, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'editor_ApproveAndRejectArticles')
+data.setCell(9, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'manager_reviewArticlesSubmittedByEditor')
+data.setCell(10, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'manager_ApproveReworkArticles')
+data.setCell(11, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'writer_SubmitArticles')
+data.setCell(12, 2, 'testcases.TextmercatoEndEndFlow')
+data.setCell(12, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TextmercatoEndEndFlow</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">CreateTestLogPath</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">invokeBrowser</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.frontEndTesting())</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">frontEndTesting</span>
+                <span class="method-start">2453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=frontEndTesting status=SKIP method=TextmercatoEndEndFlow.frontEndTesting()[pri:0, i...)</span>
+                <span class="method-start">2454 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.manager_profilepage())</span>
+                <span class="method-start">3183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manager_profilepage</span>
+                <span class="method-start">4276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=manager_profilepage status=SKIP method=TextmercatoEndEndFlow.manager_profilepage()[...)</span>
+                <span class="method-start">4276 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.manager_CreateProject())</span>
+                <span class="method-start">4750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manager_CreateProject</span>
+                <span class="method-start">5782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=manager_CreateProject status=SKIP method=TextmercatoEndEndFlow.manager_CreateProjec...)</span>
+                <span class="method-start">5782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.writer_SubmitArticles())</span>
+                <span class="method-start">6224 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">writer_SubmitArticles</span>
+                <span class="method-start">7275 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=writer_SubmitArticles status=SKIP method=TextmercatoEndEndFlow.writer_SubmitArticle...)</span>
+                <span class="method-start">7275 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.manager_ReviewArticles())</span>
+                <span class="method-start">7955 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manager_ReviewArticles</span>
+                <span class="method-start">9239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=manager_ReviewArticles status=SKIP method=TextmercatoEndEndFlow.manager_ReviewArtic...)</span>
+                <span class="method-start">9239 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles())</span>
+                <span class="method-start">9767 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editor_ApproveAndRejectArticles</span>
+                <span class="method-start">10986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=editor_ApproveAndRejectArticles status=SKIP method=TextmercatoEndEndFlow.editor_App...)</span>
+                <span class="method-start">10986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.manager_reviewArticlesSubmittedByEditor())</span>
+                <span class="method-start">11414 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manager_reviewArticlesSubmittedByEditor</span>
+                <span class="method-start">12750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=manager_reviewArticlesSubmittedByEditor status=SKIP method=TextmercatoEndEndFlow.ma...)</span>
+                <span class="method-start">12750 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.writer_ReworkOnArticles())</span>
+                <span class="method-start">13158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">writer_ReworkOnArticles</span>
+                <span class="method-start">14521 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=writer_ReworkOnArticles status=SKIP method=TextmercatoEndEndFlow.writer_ReworkOnArt...)</span>
+                <span class="method-start">14521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.manager_ApproveReworkArticles())</span>
+                <span class="method-start">15016 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manager_ApproveReworkArticles</span>
+                <span class="method-start">16094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=manager_ApproveReworkArticles status=SKIP method=TextmercatoEndEndFlow.manager_Appr...)</span>
+                <span class="method-start">16094 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.wrtiter_VerifyProjCompleted())</span>
+                <span class="method-start">16582 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">wrtiter_VerifyProjCompleted</span>
+                <span class="method-start">17722 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=wrtiter_VerifyProjCompleted status=SKIP method=TextmercatoEndEndFlow.wrtiter_Verify...)</span>
+                <span class="method-start">17722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.manager_Tickets())</span>
+                <span class="method-start">18203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manager_Tickets</span>
+                <span class="method-start">19354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=manager_Tickets status=SKIP method=TextmercatoEndEndFlow.manager_Tickets()[pri:10, ...)</span>
+                <span class="method-start">19354 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.manager_Messages())</span>
+                <span class="method-start">19749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manager_Messages</span>
+                <span class="method-start">21049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=manager_Messages status=SKIP method=TextmercatoEndEndFlow.manager_Messages()[pri:11...)</span>
+                <span class="method-start">21049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(public void testcases.TextmercatoEndEndFlow.dashboardClientpage())</span>
+                <span class="method-start">21445 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dashboardClientpage</span>
+                <span class="method-start">22524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=dashboardClientpage status=SKIP method=TextmercatoEndEndFlow.dashboardClientpage()[...)</span>
+                <span class="method-start">22524 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">close</span>
+                <span class="method-start">23266 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
