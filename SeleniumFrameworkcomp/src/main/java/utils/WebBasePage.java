@@ -2,6 +2,7 @@ package utils;
 
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -196,18 +197,4 @@ public class WebBasePage extends WaitStatement {
 
     }
 
-    // we use this code to move the mouse cursor on image.
-
-    /*public void moveToElement(String path, int time) {
-        Actions action = new Actions(driver);
-        WebElement move = driver.findElement(By.id(path));
-
-        if (action != null) {
-            action.moveToElement(move).build().perform();
-            getTest().log(LogStatus.PASS, name + " clicked");
-        } else {
-            getTest().log(LogStatus.FAIL, name + " not clicked");
-        }
-
-    }*/
 }

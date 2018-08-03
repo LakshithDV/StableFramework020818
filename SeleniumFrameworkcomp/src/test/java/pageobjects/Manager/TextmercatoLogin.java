@@ -23,9 +23,11 @@ public class TextmercatoLogin extends WebBasePage {
 
     public void clickLogin(){
         clickElementVisible(By.className("login-click"),"Login",10);
+
     }
 
     public void clickLogout(){
+        staticWait(2000);
         clickElementVisible(By.xpath("//span[contains(text(),'Log out')]"),"Logout",10);
     }
 

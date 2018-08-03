@@ -495,7 +495,6 @@ public class DashboardPage extends WebBasePage {
 
     public void composeToWriter (Map<String, String> data) {
 
-        try {
             clickElementVisible(By.xpath("//label[@for='writer_radio']"), "clcik writer icon", 10);
             // For writer data lakshit we have taken from editor only insted of creating new excel cell.
             enterElementVisible(By.xpath("//input[@id='msg_writer_search']"), data.get("Editor"), "Compose Message Editor Subject", 10);
@@ -506,13 +505,8 @@ public class DashboardPage extends WebBasePage {
             enterElementVisible(By.xpath("//form[@id='msg_form']//textarea[@name='msg_body']"), data.get("AccontsMatter"), "Compose Message Matter", 10);
             clickElementVisible(By.xpath("//input[@id='msg_submit'][@type='submit']"), "Clcik Send message to Editor", 10);
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
     public void Uplodfile (Map<String, String> data) {
-
-        try{
 
         findElementVisibility(By.xpath("//label[@for='attachment']"),10);
         String filename=System.getProperty("user.dir")+"//src//main//resources//uploadfiles//sample.doc";
@@ -520,10 +514,6 @@ public class DashboardPage extends WebBasePage {
         ((RemoteWebDriver) driver).executeScript("arguments[0].style =''; arguments[0].style.display = 'block'; arguments[0].style.visibility = 'visible';", uploadFile);
         uploadFile.sendKeys(filename);
         staticWait(1000);
-
-    }catch(Exception e){
-            e.printStackTrace();
-        }
     }
 
     public void Compose(Map<String, String> data) {
@@ -552,39 +542,37 @@ public class DashboardPage extends WebBasePage {
      * ************************************************************************************************************************/
 
     public void MessaheInboxTab() {
-            try {
+
                 clickElementVisible(By.xpath("//a[@id='ui-id-4']"), "clcik Inbox icon", 10);
                 staticWait(2000);
                 String msg = getText(By.xpath("//p[@class='mes-attach']"), "Verify the compose tab open", 3);
                 Assert.assertEquals(msg, "Attachment");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+                staticWait(2000);
         }
     public void MessaheRepaly(Map<String, String> data) {
 
-        //clickElementVisible(By.xpath("//div[contains(@class,'active')]"), "clcik to Replay message", 10);
+        clickElementVisible(By.xpath("//*[@id='mCSB_2_container']/div[1]"), "clcik to Replay message", 10);
+        staticWait(100);
         enterElementVisible(By.xpath("//textarea[contains(@name,'msg_thread_body')]"), data.get("MsgBody"), "Replaying for message", 10);
-
+        staticWait(1000);
     }
 
-    public void upload_Replay(Map<String, String> data) {
+    public void uploadReplay(Map<String, String> data) {
 
-        findElementVisibility(By.xpath("//label[contains(@for,'attachment1')]//img[contains(@class,'mCS_img_loaded')]"),10);
-        String filename=System.getProperty("user.dir")+"//src//main//resources//uploadfiles//sample.doc";
-        WebElement uploadFile = driver.findElement(By.xpath("//label[contains(@for,'attachment1')]//img[contains(@class,'mCS_img_loaded')]"));
-        ((RemoteWebDriver) driver).executeScript("arguments[0].style =''; arguments[0].style.display = 'block'; arguments[0].style.visibility = 'visible';", uploadFile);
-        uploadFile.sendKeys(filename);
-        staticWait(1000);
-
-
+            findElementVisibility(By.xpath("//label[contains(@for,'attachment1')]//img[contains(@class,'mCS_img_loaded')]"), 10);
+            String filename = System.getProperty("user.dir") + "//src//main//resources//uploadfiles//sample.doc";
+            WebElement uploadFile = driver.findElement(By.xpath("//label[contains(@for,'attachment1')]//img[contains(@class,'mCS_img_loaded')]"));
+            ((RemoteWebDriver) driver).executeScript("arguments[0].style =''; arguments[0].style.display = 'block'; arguments[0].style.visibility = 'visible';", uploadFile);
+            uploadFile.sendKeys(filename);
+            staticWait(1000);
+            clickElementVisible(By.xpath("//input[@id='thread_submit']"), "clcik Send replay", 10);
     }
 
     public void MessaheInbox(Map<String, String> data) {
 
         MessaheInboxTab();
         MessaheRepaly(data);
-        //upload_Replay(data);
+        uploadReplay(data);
 
     }
 
@@ -663,7 +651,8 @@ public class DashboardPage extends WebBasePage {
         staticWait(2000);
         selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype3"), "Select_client_paymentType3", 10);
         staticWait(2000);
-
+        selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype4"), "Select_client_paymentType3", 10);
+        staticWait(2000);
         enterElementVisible(By.xpath("//textarea[@id='reference_code']"), data.get("Refrence"), "Refrence message what ypu wish to send them", 10);
         enterElementVisible(By.xpath("//textarea[@id='others']"), data.get("OtherInfo"), "Other information what you want to use", 10);
 
@@ -686,6 +675,8 @@ public class DashboardPage extends WebBasePage {
             selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype2"), "Select_client_paymentType2", 10);
             staticWait(2000);
             selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype3"), "Select_client_paymentType3", 10);
+            staticWait(2000);
+            selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype4"), "Select_client_paymentType3", 10);
             staticWait(2000);
             enterElementVisible(By.xpath("//textarea[@id='reference_code']"), data.get("Empty"), "Amount we need to change", 10);
             enterElementVisible(By.xpath("//textarea[@id='reference_code']"), data.get("Refrence"), "Refrence message what ypu wish to send them", 10);

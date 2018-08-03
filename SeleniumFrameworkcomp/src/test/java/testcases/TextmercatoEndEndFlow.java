@@ -20,11 +20,9 @@ public class TextmercatoEndEndFlow extends WebTestBase{
 *   Complet Functionality of our dashbopard.
 * */
 
+  @Test(priority = 0)
 
-
-   @Test(priority = 0)
-
-    public void frontEndTesting() {
+   public void frontEndTesting() {
             // Complete FrontEnd Testing for our dashboard.
             Map<String, String> contactdata = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
             frontEnd Fndtest = new frontEnd(driver);
@@ -196,7 +194,8 @@ public class TextmercatoEndEndFlow extends WebTestBase{
 
     }
 
-   /* @Test(priority =12)
+
+    @Test(priority =12)
     public void dashboardClientpage() {
         Map<String, String> ManagerData = new ExcelParsing().getValueInDiffColumns(excelpath, "Validprofile", "Testdata");
         Map<String, String> clientdata = new ExcelParsing().getValueInDiffColumns(excelpath, "Create", "Createproject");
@@ -208,6 +207,6 @@ public class TextmercatoEndEndFlow extends WebTestBase{
         login.login(ManagerData);
         Clientbilling.Client(clientdata);
 
-    }*/
+    }
 
 }
