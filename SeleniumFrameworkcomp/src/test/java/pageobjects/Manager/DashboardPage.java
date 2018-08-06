@@ -516,6 +516,12 @@ public class DashboardPage extends WebBasePage {
         staticWait(1000);
     }
 
+
+
+
+
+
+
     public void Compose(Map<String, String> data) {
 
         MessageComposetab(data);
@@ -541,7 +547,7 @@ public class DashboardPage extends WebBasePage {
      *
      * ************************************************************************************************************************/
 
-    public void MessaheInboxTab() {
+    public void MessageInboxTab() {
 
                 clickElementVisible(By.xpath("//a[@id='ui-id-4']"), "clcik Inbox icon", 10);
                 staticWait(2000);
@@ -549,7 +555,7 @@ public class DashboardPage extends WebBasePage {
                 Assert.assertEquals(msg, "Attachment");
                 staticWait(2000);
         }
-    public void MessaheRepaly(Map<String, String> data) {
+    public void MessageRepaly(Map<String, String> data) {
 
         clickElementVisible(By.xpath("//*[@id='mCSB_2_container']/div[1]"), "clcik to Replay message", 10);
         staticWait(100);
@@ -568,17 +574,17 @@ public class DashboardPage extends WebBasePage {
             clickElementVisible(By.xpath("//input[@id='thread_submit']"), "clcik Send replay", 10);
     }
 
-    public void MessaheInbox(Map<String, String> data) {
+    public void MessageInbox(Map<String, String> data) {
 
-        MessaheInboxTab();
-        MessaheRepaly(data);
+        MessageInboxTab();
+        MessageRepaly(data);
         uploadReplay(data);
 
     }
 
     public void Inbox(Map<String, String> data) {
 
-        MessaheInbox(data);
+        MessageInbox(data);
 
     }
 
@@ -638,12 +644,12 @@ public class DashboardPage extends WebBasePage {
         staticWait(2000);
         clickElementVisible(By.xpath("//*[@id='example']/tbody/tr[1]/td[7]/p/input"), "clcik Pain date icone", 10);
         staticWait(2000);
-        enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("Empty"), "how much clients going to pay us ?", 10);
+        //enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("Empty"), "how much clients going to pay us ?", 10);
         enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("AmountPaid"), "how much clients going to pay us ?", 10);
         staticWait(2000);
         clickElementVisible(By.xpath("//input[@id='marking_date']"), "Paid Date", 10);
         staticWait(2000);
-        clickElementVisible(By.xpath("//a[contains(text(),'23')]"), "Dedline calender", 10);
+        clickElementVisible(By.xpath("//div[@id='ui-datepicker-div']//tbody//tr[1]//td[4]"), "Dedline calender", 10);
         staticWait(1000);
         selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype1"), "Select_client_paymentType1", 10);
         staticWait(2000);
@@ -653,21 +659,22 @@ public class DashboardPage extends WebBasePage {
         staticWait(2000);
         selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype4"), "Select_client_paymentType3", 10);
         staticWait(2000);
-        enterElementVisible(By.xpath("//textarea[@id='reference_code']"), data.get("Refrence"), "Refrence message what ypu wish to send them", 10);
+        enterElementVisible(By.xpath("//textarea[@id='reference_code']/."), data.get("Refrence"), "Refrence message what ypu wish to send them", 10);
         enterElementVisible(By.xpath("//textarea[@id='others']"), data.get("OtherInfo"), "Other information what you want to use", 10);
 
         clickElementVisible(By.xpath("//button[@class='btn btn-primary']"), "clcik Save button ", 10);
         clickElementVisible(By.xpath("//button[@class='btn btn-default']"), "clcik Close button ", 10);
-        staticWait(2000);
-
+        staticWait(1000);
     }
 
     public void Repayment(Map<String, String > data) {
 
 
-            clickElementVisible(By.xpath("//tbody//tr[1]//td[7]//p[1]//input[1]"), "clcik Pain date icone", 10);
+            clickElementVisible(By.xpath("//*[@id='example']/tbody/tr[1]/td[7]/p/input"), "clcik Pain date icone", 10);
+            staticWait(1000);
             clickElementVisible(By.xpath("//button[@class='btn btn-success btn_1']"), "clcik Change Reciept button ", 10);
-            enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("Empty"), "Amount we need to change", 10);
+            staticWait(1000);
+            //enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("Empty"), "Amount we need to change", 10);
             enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("AmountPaid"), "Amount we need to change", 10);
             //enterElementVisible(By.xpath("//input[@id='amount_paid_by_client']"), data.get("PaidDate"), "Other information what you want to use", 10);
             selectValueWithText(By.xpath("//select[@id='tr_type']"), data.get("Ptype1"), "Select_client_paymentType1", 10);
@@ -749,18 +756,19 @@ public class DashboardPage extends WebBasePage {
 
             selectValueWithText(By.xpath("//select[@id='select_country']"), data.get("Country"), "Select_client_Country", 10);
 
-            selectValueWithText(By.xpath("//input[@name='state']"), data.get("State"), "Select_client_state", 10);
+            selectValueWithText(By.xpath("//div[@class='searh']//select[@name='indian_state']"), data.get("State"), "Select_client_state", 10);
 
             clickElementVisible(By.xpath("//div[@class='biggerc styledCheckbox']"), "clcik check box of siz", 10);
-
-            staticWait(3000);
+            staticWait(1000);
             clickElementVisible(By.xpath("//div[@class='biggerc styledCheckbox']"), "clcik check box of siz", 10);
 
             enterElementVisible(By.xpath("//input[@name='contact_1_name']"), data.get("Contact1"), "client_Contact1", 10);
 
-            enterElementVisible(By.xpath("//input[@name='contact_1_mail']"), data.get("Contact2"), "client_Contact2", 10);
+            enterElementVisible(By.xpath("//input[@name='contact_1_mail']"), data.get("Contact1mail"), "client_Contact2", 10);
 
-            enterElementVisible(By.xpath("//input[@name='contact_1_phone']"), data.get("phone"), "client_Phone_Number", 10);
+            enterElementVisible(By.xpath("//input[@name='contact_1_phone']"), data.get("Contact1phone"), "client_Phone_Number", 10);
+
+            enterElementVisible(By.xpath("//div[@class='searh']//input[@name='clients_gstin']"), data.get("GSTIN"), "client_GSTIN_Number", 10);
 
             clickElementVisible(By.xpath("//input[@value='Create']"), "Create New Client", 10);
     }
