@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="13" failed="0" total="13" passed="0">
+<testng-results skipped="0" failed="2" total="13" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23160" started-at="2018-08-02T11:59:42Z" finished-at="2018-08-02T12:00:05Z">
+  <suite name="Suite" duration-ms="811161" started-at="2018-08-03T12:40:18Z" finished-at="2018-08-03T12:53:49Z">
     <groups>
     </groups>
-    <test name="TestName" duration-ms="23160" started-at="2018-08-02T11:59:42Z" finished-at="2018-08-02T12:00:05Z">
+    <test name="TestName" duration-ms="811161" started-at="2018-08-03T12:40:18Z" finished-at="2018-08-03T12:53:49Z">
       <class name="testcases.TextmercatoEndEndFlow">
-        <test-method status="PASS" signature="CreateTestLogPath()[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="CreateTestLogPath" is-config="true" duration-ms="6" started-at="2018-08-02T17:29:42Z" finished-at="2018-08-02T17:29:42Z">
+        <test-method status="PASS" signature="CreateTestLogPath()[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="CreateTestLogPath" is-config="true" duration-ms="6" started-at="2018-08-03T18:10:18Z" finished-at="2018-08-03T18:10:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTestLogPath -->
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="invokeBrowser" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:42Z" finished-at="2018-08-02T17:29:42Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="invokeBrowser" is-config="true" duration-ms="0" started-at="2018-08-03T18:10:18Z" finished-at="2018-08-03T18:10:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:42Z" finished-at="2018-08-02T17:29:42Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="2028" started-at="2018-08-03T18:10:18Z" finished-at="2018-08-03T18:10:20Z">
           <params>
             <param index="0">
               <value>
@@ -23,87 +23,18 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 0557bee748ceaf1a83fa983b6230eea7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 0557bee748ceaf1a83fa983b6230eea7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="frontEndTesting()[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="frontEndTesting" duration-ms="1" started-at="2018-08-02T17:29:44Z" finished-at="2018-08-02T17:29:44Z">
+        <test-method status="PASS" signature="frontEndTesting()[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="frontEndTesting" duration-ms="112355" started-at="2018-08-03T18:10:20Z" finished-at="2018-08-03T18:12:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frontEndTesting -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="728" started-at="2018-08-02T17:29:44Z" finished-at="2018-08-02T17:29:45Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="76" started-at="2018-08-03T18:12:12Z" finished-at="2018-08-03T18:12:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=frontEndTesting status=SKIP method=TextmercatoEndEndFlow.frontEndTesting()[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=frontEndTesting status=SUCCESS method=TextmercatoEndEndFlow.frontEndTesting()[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -115,7 +46,7 @@ Session ID: 0557bee748ceaf1a83fa983b6230eea7
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:45Z" finished-at="2018-08-02T17:29:45Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="490" started-at="2018-08-03T18:12:12Z" finished-at="2018-08-03T18:12:12Z">
           <params>
             <param index="0">
               <value>
@@ -123,87 +54,18 @@ Session ID: 0557bee748ceaf1a83fa983b6230eea7
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: e39194c3fdb16f24c8e003eda06718ae]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: e39194c3fdb16f24c8e003eda06718ae
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="manager_profilepage()[pri:1, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="manager_profilepage" duration-ms="0" started-at="2018-08-02T17:29:46Z" finished-at="2018-08-02T17:29:46Z">
+        <test-method status="PASS" signature="manager_profilepage()[pri:1, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="manager_profilepage" duration-ms="15146" started-at="2018-08-03T18:12:12Z" finished-at="2018-08-03T18:12:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manager_profilepage -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="474" started-at="2018-08-02T17:29:46Z" finished-at="2018-08-02T17:29:46Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="72" started-at="2018-08-03T18:12:28Z" finished-at="2018-08-03T18:12:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manager_profilepage status=SKIP method=TextmercatoEndEndFlow.manager_profilepage()[pri:1, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=manager_profilepage status=SUCCESS method=TextmercatoEndEndFlow.manager_profilepage()[pri:1, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -215,94 +77,9 @@ Session ID: e39194c3fdb16f24c8e003eda06718ae
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:46Z" finished-at="2018-08-02T17:29:46Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="462" started-at="2018-08-03T18:12:28Z" finished-at="2018-08-03T18:12:28Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_CreateProject()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 8dc9a069e18d7a701ec5fb04bd97e820]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 8dc9a069e18d7a701ec5fb04bd97e820
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="442" started-at="2018-08-02T17:29:47Z" finished-at="2018-08-02T17:29:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=manager_CreateProject status=SKIP method=TextmercatoEndEndFlow.manager_CreateProject()[pri:2, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_CreateProject()]]>
               </value>
@@ -310,12 +87,28 @@ Session ID: 8dc9a069e18d7a701ec5fb04bd97e820
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reportWrapUp -->
-        <test-method status="SKIP" signature="manager_CreateProject()[pri:2, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="manager_CreateProject" duration-ms="0" started-at="2018-08-02T17:29:47Z" finished-at="2018-08-02T17:29:47Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="manager_CreateProject()[pri:2, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="manager_CreateProject" duration-ms="137505" started-at="2018-08-03T18:12:28Z" finished-at="2018-08-03T18:14:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manager_CreateProject -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:48Z" finished-at="2018-08-02T17:29:48Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="75" started-at="2018-08-03T18:14:46Z" finished-at="2018-08-03T18:14:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manager_CreateProject status=SUCCESS method=TextmercatoEndEndFlow.manager_CreateProject()[pri:2, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_CreateProject()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="486" started-at="2018-08-03T18:14:46Z" finished-at="2018-08-03T18:14:46Z">
           <params>
             <param index="0">
               <value>
@@ -323,87 +116,18 @@ Session ID: 8dc9a069e18d7a701ec5fb04bd97e820
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 2ec3c6153893f46328683954615b4fc7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 2ec3c6153893f46328683954615b4fc7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="writer_SubmitArticles()[pri:3, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="writer_SubmitArticles" duration-ms="0" started-at="2018-08-02T17:29:49Z" finished-at="2018-08-02T17:29:49Z">
+        <test-method status="PASS" signature="writer_SubmitArticles()[pri:3, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="writer_SubmitArticles" duration-ms="75914" started-at="2018-08-03T18:14:46Z" finished-at="2018-08-03T18:16:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writer_SubmitArticles -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="680" started-at="2018-08-02T17:29:49Z" finished-at="2018-08-02T17:29:50Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="73" started-at="2018-08-03T18:16:02Z" finished-at="2018-08-03T18:16:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=writer_SubmitArticles status=SKIP method=TextmercatoEndEndFlow.writer_SubmitArticles()[pri:3, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=writer_SubmitArticles status=SUCCESS method=TextmercatoEndEndFlow.writer_SubmitArticles()[pri:3, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -415,94 +139,9 @@ Session ID: 2ec3c6153893f46328683954615b4fc7
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:50Z" finished-at="2018-08-02T17:29:50Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="524" started-at="2018-08-03T18:16:02Z" finished-at="2018-08-03T18:16:03Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_ReviewArticles()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 4e49073d37e804499aa8c97cb84c61f6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 4e49073d37e804499aa8c97cb84c61f6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="528" started-at="2018-08-02T17:29:51Z" finished-at="2018-08-02T17:29:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=manager_ReviewArticles status=SKIP method=TextmercatoEndEndFlow.manager_ReviewArticles()[pri:4, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_ReviewArticles()]]>
               </value>
@@ -510,112 +149,59 @@ Session ID: 4e49073d37e804499aa8c97cb84c61f6
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reportWrapUp -->
-        <test-method status="SKIP" signature="manager_ReviewArticles()[pri:4, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="manager_ReviewArticles" duration-ms="0" started-at="2018-08-02T17:29:51Z" finished-at="2018-08-02T17:29:51Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="manager_ReviewArticles()[pri:4, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="manager_ReviewArticles" duration-ms="42090" started-at="2018-08-03T18:16:03Z" finished-at="2018-08-03T18:16:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manager_ReviewArticles -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:51Z" finished-at="2018-08-02T17:29:51Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="73" started-at="2018-08-03T18:16:45Z" finished-at="2018-08-03T18:16:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: c419f76d53653f555123e75bc1e4be8d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: c419f76d53653f555123e75bc1e4be8d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="428" started-at="2018-08-02T17:29:53Z" finished-at="2018-08-02T17:29:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editor_ApproveAndRejectArticles status=SKIP method=TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()[pri:5, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=manager_ReviewArticles status=SUCCESS method=TextmercatoEndEndFlow.manager_ReviewArticles()[pri:4, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()]]>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_ReviewArticles()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="SKIP" signature="editor_ApproveAndRejectArticles()[pri:5, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="editor_ApproveAndRejectArticles" duration-ms="0" started-at="2018-08-02T17:29:53Z" finished-at="2018-08-02T17:29:53Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="509" started-at="2018-08-03T18:16:45Z" finished-at="2018-08-03T18:16:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="editor_ApproveAndRejectArticles()[pri:5, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="editor_ApproveAndRejectArticles" duration-ms="57635" started-at="2018-08-03T18:16:45Z" finished-at="2018-08-03T18:17:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editor_ApproveAndRejectArticles -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:53Z" finished-at="2018-08-02T17:29:53Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="72" started-at="2018-08-03T18:17:43Z" finished-at="2018-08-03T18:17:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editor_ApproveAndRejectArticles status=SUCCESS method=TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()[pri:5, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.editor_ApproveAndRejectArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="495" started-at="2018-08-03T18:17:43Z" finished-at="2018-08-03T18:17:44Z">
           <params>
             <param index="0">
               <value>
@@ -623,87 +209,18 @@ Session ID: c419f76d53653f555123e75bc1e4be8d
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 09f85febc7c7f609081f5859bf776790]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 09f85febc7c7f609081f5859bf776790
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="manager_reviewArticlesSubmittedByEditor()[pri:6, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="manager_reviewArticlesSubmittedByEditor" duration-ms="0" started-at="2018-08-02T17:29:54Z" finished-at="2018-08-02T17:29:54Z">
+        <test-method status="PASS" signature="manager_reviewArticlesSubmittedByEditor()[pri:6, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="manager_reviewArticlesSubmittedByEditor" duration-ms="55353" started-at="2018-08-03T18:17:44Z" finished-at="2018-08-03T18:18:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manager_reviewArticlesSubmittedByEditor -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="408" started-at="2018-08-02T17:29:54Z" finished-at="2018-08-02T17:29:55Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="71" started-at="2018-08-03T18:18:39Z" finished-at="2018-08-03T18:18:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manager_reviewArticlesSubmittedByEditor status=SKIP method=TextmercatoEndEndFlow.manager_reviewArticlesSubmittedByEditor()[pri:6, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=manager_reviewArticlesSubmittedByEditor status=SUCCESS method=TextmercatoEndEndFlow.manager_reviewArticlesSubmittedByEditor()[pri:6, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -715,94 +232,9 @@ Session ID: 09f85febc7c7f609081f5859bf776790
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:55Z" finished-at="2018-08-02T17:29:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="508" started-at="2018-08-03T18:18:39Z" finished-at="2018-08-03T18:18:40Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[public void testcases.TextmercatoEndEndFlow.writer_ReworkOnArticles()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: d27f8d2e2417909d323df0a925ec3e8b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: d27f8d2e2417909d323df0a925ec3e8b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="495" started-at="2018-08-02T17:29:56Z" finished-at="2018-08-02T17:29:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=writer_ReworkOnArticles status=SKIP method=TextmercatoEndEndFlow.writer_ReworkOnArticles()[pri:7, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[public void testcases.TextmercatoEndEndFlow.writer_ReworkOnArticles()]]>
               </value>
@@ -810,12 +242,28 @@ Session ID: d27f8d2e2417909d323df0a925ec3e8b
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reportWrapUp -->
-        <test-method status="SKIP" signature="writer_ReworkOnArticles()[pri:7, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="writer_ReworkOnArticles" duration-ms="0" started-at="2018-08-02T17:29:56Z" finished-at="2018-08-02T17:29:56Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="writer_ReworkOnArticles()[pri:7, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="writer_ReworkOnArticles" duration-ms="117851" started-at="2018-08-03T18:18:40Z" finished-at="2018-08-03T18:20:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writer_ReworkOnArticles -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:57Z" finished-at="2018-08-02T17:29:57Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="74" started-at="2018-08-03T18:20:37Z" finished-at="2018-08-03T18:20:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=writer_ReworkOnArticles status=SUCCESS method=TextmercatoEndEndFlow.writer_ReworkOnArticles()[pri:7, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.writer_ReworkOnArticles()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="480" started-at="2018-08-03T18:20:37Z" finished-at="2018-08-03T18:20:38Z">
           <params>
             <param index="0">
               <value>
@@ -823,87 +271,18 @@ Session ID: d27f8d2e2417909d323df0a925ec3e8b
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: d5f0b53a691f702c03724a0b781da3ef]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: d5f0b53a691f702c03724a0b781da3ef
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="manager_ApproveReworkArticles()[pri:8, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="manager_ApproveReworkArticles" duration-ms="0" started-at="2018-08-02T17:29:58Z" finished-at="2018-08-02T17:29:58Z">
+        <test-method status="PASS" signature="manager_ApproveReworkArticles()[pri:8, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="manager_ApproveReworkArticles" duration-ms="37082" started-at="2018-08-03T18:20:38Z" finished-at="2018-08-03T18:21:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manager_ApproveReworkArticles -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="488" started-at="2018-08-02T17:29:58Z" finished-at="2018-08-02T17:29:58Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="73" started-at="2018-08-03T18:21:15Z" finished-at="2018-08-03T18:21:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manager_ApproveReworkArticles status=SKIP method=TextmercatoEndEndFlow.manager_ApproveReworkArticles()[pri:8, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=manager_ApproveReworkArticles status=SUCCESS method=TextmercatoEndEndFlow.manager_ApproveReworkArticles()[pri:8, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -915,7 +294,7 @@ Session ID: d5f0b53a691f702c03724a0b781da3ef
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:29:58Z" finished-at="2018-08-02T17:29:58Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="470" started-at="2018-08-03T18:21:15Z" finished-at="2018-08-03T18:21:16Z">
           <params>
             <param index="0">
               <value>
@@ -923,87 +302,18 @@ Session ID: d5f0b53a691f702c03724a0b781da3ef
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 3b81e02b209d61e5685468c25453da67]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: 3b81e02b209d61e5685468c25453da67
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="wrtiter_VerifyProjCompleted()[pri:9, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="wrtiter_VerifyProjCompleted" duration-ms="0" started-at="2018-08-02T17:29:59Z" finished-at="2018-08-02T17:29:59Z">
+        <test-method status="PASS" signature="wrtiter_VerifyProjCompleted()[pri:9, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="wrtiter_VerifyProjCompleted" duration-ms="23415" started-at="2018-08-03T18:21:16Z" finished-at="2018-08-03T18:21:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrtiter_VerifyProjCompleted -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="481" started-at="2018-08-02T17:29:59Z" finished-at="2018-08-02T17:30:00Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="69" started-at="2018-08-03T18:21:39Z" finished-at="2018-08-03T18:21:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=wrtiter_VerifyProjCompleted status=SKIP method=TextmercatoEndEndFlow.wrtiter_VerifyProjCompleted()[pri:9, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=wrtiter_VerifyProjCompleted status=SUCCESS method=TextmercatoEndEndFlow.wrtiter_VerifyProjCompleted()[pri:9, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -1015,94 +325,9 @@ Session ID: 3b81e02b209d61e5685468c25453da67
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:30:00Z" finished-at="2018-08-02T17:30:00Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="497" started-at="2018-08-03T18:21:39Z" finished-at="2018-08-03T18:21:40Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_Tickets()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: aa72330112f7467df729e20254f8dfcb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: aa72330112f7467df729e20254f8dfcb
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="395" started-at="2018-08-02T17:30:01Z" finished-at="2018-08-02T17:30:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=manager_Tickets status=SKIP method=TextmercatoEndEndFlow.manager_Tickets()[pri:10, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_Tickets()]]>
               </value>
@@ -1110,12 +335,28 @@ Session ID: aa72330112f7467df729e20254f8dfcb
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reportWrapUp -->
-        <test-method status="SKIP" signature="manager_Tickets()[pri:10, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="manager_Tickets" duration-ms="0" started-at="2018-08-02T17:30:01Z" finished-at="2018-08-02T17:30:01Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="manager_Tickets()[pri:10, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="manager_Tickets" duration-ms="18023" started-at="2018-08-03T18:21:40Z" finished-at="2018-08-03T18:21:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manager_Tickets -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:30:01Z" finished-at="2018-08-02T17:30:01Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="70" started-at="2018-08-03T18:21:58Z" finished-at="2018-08-03T18:21:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manager_Tickets status=SUCCESS method=TextmercatoEndEndFlow.manager_Tickets()[pri:10, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TextmercatoEndEndFlow.manager_Tickets()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="471" started-at="2018-08-03T18:21:58Z" finished-at="2018-08-03T18:21:58Z">
           <params>
             <param index="0">
               <value>
@@ -1123,51 +364,23 @@ Session ID: aa72330112f7467df729e20254f8dfcb
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: c113ba8fbcc9a78ffe3d5dfa5a01e65e]]>
-            </message>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="manager_Messages()[pri:11, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="manager_Messages" duration-ms="69113" started-at="2018-08-03T18:21:58Z" finished-at="2018-08-03T18:23:07Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
-  (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: c113ba8fbcc9a78ffe3d5dfa5a01e65e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
+              <![CDATA[java.lang.NullPointerException
+	at pageobjects.Manager.DashboardPage.Uplodfile(DashboardPage.java:513)
+	at pageobjects.Manager.DashboardPage.Compose(DashboardPage.java:529)
+	at pageobjects.Manager.DashboardPage.Message(DashboardPage.java:534)
+	at testcases.TextmercatoEndEndFlow.manager_Messages(TextmercatoEndEndFlow.java:191)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1191,19 +404,15 @@ Session ID: c113ba8fbcc9a78ffe3d5dfa5a01e65e
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="manager_Messages()[pri:11, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="manager_Messages" duration-ms="0" started-at="2018-08-02T17:30:03Z" finished-at="2018-08-02T17:30:03Z">
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manager_Messages -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="396" started-at="2018-08-02T17:30:03Z" finished-at="2018-08-02T17:30:03Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="253" started-at="2018-08-03T18:23:07Z" finished-at="2018-08-03T18:23:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manager_Messages status=SKIP method=TextmercatoEndEndFlow.manager_Messages()[pri:11, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=manager_Messages status=FAILURE method=TextmercatoEndEndFlow.manager_Messages()[pri:11, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -1215,7 +424,7 @@ Session ID: c113ba8fbcc9a78ffe3d5dfa5a01e65e
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-02T17:30:03Z" finished-at="2018-08-02T17:30:03Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="setUp" is-config="true" duration-ms="493" started-at="2018-08-03T18:23:08Z" finished-at="2018-08-03T18:23:08Z">
           <params>
             <param index="0">
               <value>
@@ -1223,28 +432,32 @@ Session ID: c113ba8fbcc9a78ffe3d5dfa5a01e65e
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="dashboardClientpage()[pri:12, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="dashboardClientpage" duration-ms="40495" started-at="2018-08-03T18:23:08Z" finished-at="2018-08-03T18:23:48Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[unknown error: failed to change window state to maximized, current state is normal
+              <![CDATA[unknown error: Element <input client_id="68" style=" width:100%; " title="Mark as Paid" class="mark_as_paid_datepicker client_id68" amount_to_be_paid="5664" amount_paid_by_client="" readonly="1"> is not clickable at point (931, 14). Other element would receive the click: <div class="modal bootstrap-dialog type-primary fade size-normal in" role="dialog" aria-hidden="true" id="80153e2b-bcef-4d67-ad2f-b5405b354f84" aria-labelledby="80153e2b-bcef-4d67-ad2f-b5405b354f84_title" tabindex="-1" style="z-index: 1050; display: block; padding-right: 15px;">...</div>
   (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-29-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
+System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-29-generic', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: d0f4caefff41294e0eecd0c100756659]]>
+Session ID: a0cb8a7a797c93535e3c6b051b6c0bb2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input client_id="68" style=" width:100%; " title="Mark as Paid" class="mark_as_paid_datepicker client_id68" amount_to_be_paid="5664" amount_paid_by_client="" readonly="1"> is not clickable at point (931, 14). Other element would receive the click: <div class="modal bootstrap-dialog type-primary fade size-normal in" role="dialog" aria-hidden="true" id="80153e2b-bcef-4d67-ad2f-b5405b354f84" aria-labelledby="80153e2b-bcef-4d67-ad2f-b5405b354f84_title" tabindex="-1" style="z-index: 1050; display: block; padding-right: 15px;">...</div>
   (Session info: chrome=68.0.3440.84)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 4.15.0-29-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-24-generic', java.version: '1.8.0_181'
+System info: host: 'text-OptiPlex-3010', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-29-generic', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.84, webStorageEnabled: true}
-Session ID: d0f4caefff41294e0eecd0c100756659
+Session ID: a0cb8a7a797c93535e3c6b051b6c0bb2
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1257,17 +470,19 @@ Session ID: d0f4caefff41294e0eecd0c100756659
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:836)
-	at utils.WebTestBase.setUp(WebTestBase.java:58)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at utils.WebBasePage.clickElementVisible(WebBasePage.java:62)
+	at pageobjects.Manager.DashboardPage.selectPayMentData(DashboardPage.java:639)
+	at pageobjects.Manager.DashboardPage.ClientTab(DashboardPage.java:776)
+	at pageobjects.Manager.DashboardPage.Client(DashboardPage.java:788)
+	at testcases.TextmercatoEndEndFlow.dashboardClientpage(TextmercatoEndEndFlow.java:207)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -1294,16 +509,12 @@ Session ID: d0f4caefff41294e0eecd0c100756659
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="dashboardClientpage()[pri:12, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="dashboardClientpage" duration-ms="0" started-at="2018-08-02T17:30:04Z" finished-at="2018-08-02T17:30:04Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- dashboardClientpage -->
-        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="reportWrapUp" is-config="true" duration-ms="641" started-at="2018-08-02T17:30:04Z" finished-at="2018-08-02T17:30:05Z">
+        <test-method status="PASS" signature="reportWrapUp(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="reportWrapUp" is-config="true" duration-ms="192" started-at="2018-08-03T18:23:48Z" finished-at="2018-08-03T18:23:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dashboardClientpage status=SKIP method=TextmercatoEndEndFlow.dashboardClientpage()[pri:12, instance:testcases.TextmercatoEndEndFlow@27c20538] output={null}]]]>
+                <![CDATA[[TestResult name=dashboardClientpage status=FAILURE method=TextmercatoEndEndFlow.dashboardClientpage()[pri:12, instance:testcases.TextmercatoEndEndFlow@3f49dace] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -1315,7 +526,7 @@ Session ID: d0f4caefff41294e0eecd0c100756659
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportWrapUp -->
-        <test-method status="PASS" signature="close()[pri:0, instance:testcases.TextmercatoEndEndFlow@27c20538]" name="close" is-config="true" duration-ms="262" started-at="2018-08-02T17:30:05Z" finished-at="2018-08-02T17:30:05Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:testcases.TextmercatoEndEndFlow@3f49dace]" name="close" is-config="true" duration-ms="271" started-at="2018-08-03T18:23:49Z" finished-at="2018-08-03T18:23:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

@@ -6,22 +6,11 @@
       <class name="testcases.TextmercatoEndEndFlow">
         <methods>
           <include name="setUp"/>
-          <include name="editor_ApproveAndRejectArticles"/>
-          <include name="manager_ReviewArticles"/>
-          <include name="close"/>
-          <include name="manager_Tickets"/>
-          <include name="manager_profilepage"/>
-          <include name="manager_CreateProject"/>
-          <include name="reportWrapUp"/>
-          <include name="manager_reviewArticlesSubmittedByEditor"/>
-          <include name="writer_ReworkOnArticles"/>
           <include name="CreateTestLogPath"/>
-          <include name="manager_ApproveReworkArticles"/>
-          <include name="wrtiter_VerifyProjCompleted"/>
           <include name="manager_Messages"/>
-          <include name="frontEndTesting"/>
+          <include name="close"/>
           <include name="invokeBrowser"/>
-          <include name="writer_SubmitArticles"/>
+          <include name="reportWrapUp"/>
           <include name="dashboardClientpage"/>
         </methods>
       </class> <!-- testcases.TextmercatoEndEndFlow -->
