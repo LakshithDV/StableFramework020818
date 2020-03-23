@@ -74,4 +74,19 @@ public class ComplexReportFactory {
 		}
 	}
 
+	public synchronized static void closeTest()  {
+		ExtentTest test = getTest();
+		closeTest(test);
+	}
+
+	public synchronized static void closeReport() {
+		if (reporter != null) {
+			reporter.flush();
+			reporter.close();
+		}
+	}
+	public synchronized static void closeTest(ExtentTest test) {
+		if (test != null) {
+			getExtentReport().endTest(test);
+		}
 }
