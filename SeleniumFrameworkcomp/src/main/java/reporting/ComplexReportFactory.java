@@ -90,3 +90,8 @@ public class ComplexReportFactory {
 			getExtentReport().endTest(test);
 		}
 }
+	public synchronized static void closeTest(ExtentTest test) {
+		if (test != null) {
+			getExtentReport().endTest(test);
+		}
+}
